@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+
+header {
+    background-image: url("https://www.kent.co.in/images/home-page-banner-new.jpg");
+    background-size: cover;
+    /* padding: 1.7rem 2.5rem; */
+}
+.bgHeader{
+    background: rgba(255, 255, 255, 0.63);
+    padding: 1rem;
+}
+.logo {
+    display: block;
+}
+
+.summerA {
+    display: block;
+    text-transform: uppercase;
+    color: #f10505;
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+.headLeft {
+    width: calc(99% - 300px);
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 1rem;
+}
+.headLeft h1{
+    width: 64%;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+.headLeft p{
+    width: 80%;
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.formCont {
+    width: 300px;
+    padding: 0.5rem 0.7rem;
+    background: #edeeee;
+    display: inline-block;
+    position: relative;
+    border-radius: 4px;
+}
+.formCont p{
+    color: #25519e;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.5rem 0 0.3rem;
+}
+.formCont input,
+.formCont select {
+    background: #ffffff;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    width: 100%;
+    border: none;
+    margin: 0.5rem 0;
+}
+.formCont input[type='submit']{
+    background:#337ab7;
+    border-radius: 4px;
+}
+.term{
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+    font-size: 0.8rem;
+    text-align: left;
+    padding: 0.3rem;
+    margin: 0.4rem 0;
+}
+.term input[type='checkbox']{
+    float: left;
+    width: auto;
+    margin: 0;
+}
+.banner{
+    margin:1rem 0;
+    width: 100%;
+}
+ul{
+	width:100%
+}
+ul li{
+    display: flex;
+    direction: ltr;
+    margin: 2.5rem 0;
+}
+ul li img{
+    width:292px;
+}
+ul li div{
+    width:65%;
+    padding-left:1rem;
+}
+ul li div h2 {
+    color: #337ab7;
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding: 3.5rem 0rem 0;
+}
+
+ul li div h3 {
+    color: #333333;
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding:0 0rem 2.5rem;
+}
+
+ul li div p {
+    color: #333333;
+    font-size: 1rem;
+    font-weight: normal;
+    padding:0 0 1rem 0;
+}
+.rtl{
+    direction:rtl;
+}
+.rtl div{
+    padding: 0 1rem 0 0;
+}
+.liBgEven{
+    background: #f9f9f9f9;
+    border: 1px solid #f5f5f5;
+    border-radius: 4px 0 4px 0;
+}
+.liBgOdd{
+    background: #f9f9f9f9;
+    border: 1px solid #f5f5f5;
+    border-radius: 4px 0 4px 0;
+}
+footer {
+    background: #1b1d29;
+    display:block;
+    padding:0.5rem 0;
+}
+footer p{
+    color:#c8c6c4;
+    font-size: 0.8rem;
+}
+.footerLink{
+    float: right;
+    color: #c8c6c4;
+    font-size: 0.8rem;
+    line-height:1.5rem;
+}
+.footerLink a{
+    font-size: 0.8rem;
+    color:#c8c6c4;
+    text-decoration: none;
+    padding:0 0.3rem;
+}
+.footerLink a:hover{
+    text-decoration: underline;
+}
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button,input[type="date"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+ 
+input[type="number"],input[type="date"] {
+    -moz-appearance: textfield;
+}
+#goFrom{
+    display: none;
+}
+.drinkTest{
+    width: 250px !important;
+    border-radius: 8px;
+    margin: 1% 0 1% 44%;
+}
+.btnFooter{
+    background: #0e9e71;
+    font-size: 0.8rem;
+    padding: 1rem;
+    display: inline-block;
+    width: 49%;
+    /* border-radius: 8px; */
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 7px #000;
+}
+.callNow{
+    position: fixed;
+    bottom: 0;
+    /* color: #fff;
+    padding: 1rem; */
+    width: 100%;
+    /* text-align: center;*/
+    display: none; 
+}
+
+.f-left{
+    float: left;
+}
+.f-right{
+    float: right;
+}
+.bgBlue{
+    background: #336eb7;
+}
+@media screen and (max-width:576px){
+    
+    .callNow{
+        display: block !important;
+      }
+      .drinkTest{
+          display: none;
+      }
+      footer{
+          margin-bottom: 3rem;
+      }
+}
+@media only screen and (min-width: 1200px) {
+.container{
+    width: 1200px;
+    margin: 0 auto;   
+}
+}
+@media only screen and (max-width: 768px){
+    .formCont{
+        position: relative;
+    }
+    .banner{
+        width:90%;
+    }
+    .container,.banner img{
+        width: 100%;
+    }
+    .banner{
+        padding: 1rem;
+    }
+    article {
+        padding: 1rem;
+    }
+    ul {
+        width: 100%;
+        padding: 1rem;
+    }
+    ul li{
+        margin: 1rem 0;
+        border-bottom: 1px solid #f3f3f3;
+    }
+    ul li:last-child{
+        border-bottom: none;
+    }
+    footer{
+        padding: 0.5rem 1rem;
+    }
+    #goFrom{
+        background-image: url('../img/top.png');
+        background-size: 30px;
+        display: block;
+        position: fixed;
+        bottom: 65px;
+        right: 17px;
+        width: 30px;
+        height: 30px;
+        cursor:pointer;
+
+    }
+    .drinkTest{
+        margin: 1% 0 1% 35%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .container,.headLeft,.headLeft h1,.formCont,.banner,.banner img{
+        width: 100%;
+    }
+    .banner{
+        padding: 1rem;
+    }
+    .formCont{
+        position: relative;
+        margin-top:1rem;
+    }
+    ul{
+        width:100%;
+        padding:1rem;
+    }
+    ul li{
+        flex-wrap: wrap;
+        margin: 1rem 0;
+    }
+    ul li div{
+        width: 100%;
+    }
+    ul li div h2 {
+        padding:0;
+    }
+    ul li div h3 {
+        padding: 0 0rem .5rem;
+    }
+    ul li img{
+        margin:0 auto;
+    }
+    footer div p{
+
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    
+    }
+    .footerLink{
+        float:none;
+        text-align: center;
+    }
+
+}
